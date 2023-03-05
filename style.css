@@ -192,3 +192,37 @@ input[type=range] {
     background: #ff3347;
     transition: all 0.3s ease;
 }
+.option input::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1c80b;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+/*     border-radius: 15px;*/
+}
+
+.option input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: none;
+    width: 20px;
+    height: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 3px #ccc;
+    position: relative;
+/*     border-radius: 15px;*/
+}
+
+.option input:checked::before {
+    opacity: 1;
+}
