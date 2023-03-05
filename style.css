@@ -18,9 +18,18 @@ body{
 
 .blured{
     width: 450px;
+    height: 515px;
     border-radius: 8px;
-    background: white;
     position: relative;
+    /* filter: blur(5px) brightness(1);
+    background-image: url("bg.jpg"); */
+
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .container{
@@ -29,7 +38,6 @@ body{
     border-radius: 8px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.356);
     position: absolute;
-    
 }
 
 .container h2{
