@@ -12,14 +12,24 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #fff;
+    background-image: url("bg.jpg");
+    background-size:cover;
+}
+
+.blured{
+    width: 450px;
+    border-radius: 8px;
+    background: white;
+    position: relative;
 }
 
 .container{
     width: 450px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.482);
     border-radius: 8px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.356);
+    position: absolute;
+    
 }
 
 .container h2{
@@ -59,7 +69,7 @@ body{
 }
 
 .input-box span:hover{
-    color: #43A047 !important;
+    color: #ff5162 !important;
 }
 
 .wrapper .pass-indicator{
@@ -108,6 +118,27 @@ body{
     height: 5px;
 }
 
+/* Slider */
+
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: #ff5162; /* set the background color */
+    height: 10px; /* set the height of the range input */
+    border-radius: 5px; /* set the border radius */
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px; /* set the width of the slider thumb */
+    height: 20px; /* set the height of the slider thumb */
+    border-radius: 50%; /* set the border radius */
+    background-color: #ffffff; /* set the color of the slider thumb */
+    cursor: pointer;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.616);
+  }
+
+/* --- */
+
 .pass-settings .options{
     display: flex;
     list-style: none;
@@ -148,10 +179,16 @@ body{
     border: none;
     outline: none;
     cursor: pointer;
-    background: #43A047;
+    background: #ff5162;
     font-size: 1.06rem;
     padding: 0.94rem 0;
     border-radius: 5px;
     text-transform: uppercase;
     margin: 0.94rem 0 1.3rem;
+    transition: all 0.2s ease;
+}
+
+.generate-btn:hover{
+    background: #ff3347;
+    transition: all 0.3s ease;
 }
